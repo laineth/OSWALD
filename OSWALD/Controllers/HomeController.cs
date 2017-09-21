@@ -11,10 +11,11 @@ namespace OSWALD.Controllers
     {
         public ActionResult Index()
         {
-            var oswin = new Chatbot();
-
-            oswin.BotName = "Oswin: ";
-            oswin.Greetings = "Hello! I am here to give you information related to Thomas.";
+            var oswin = new Chatbot
+            {
+                BotName = "Oswin: ",
+                Greetings = "Hello! I am here to give you information about Thomas."
+            };
 
             return View(oswin);
         }
