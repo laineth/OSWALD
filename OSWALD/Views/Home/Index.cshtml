@@ -1,6 +1,4 @@
-﻿@{
-    ViewBag.Title = "OSWALD";
-}
+﻿@model OSWALD.Models.Chatbot
 
 <div class="row">
     <div class="col-md-12">
@@ -14,8 +12,13 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <form>
+        <form name="Oswin">
             <textarea>
+                @{ 
+                    @Html.DisplayFor(x => x.BotName);
+                    @Html.DisplayFor(z => z.Greetings);
+                    
+                }
             </textarea>
             <button type="submit" class="btn">Send</button>
             <button type="reset" class="btn btn-danger">Reset</button>

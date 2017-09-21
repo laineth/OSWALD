@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OSWALD.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,21 +11,12 @@ namespace OSWALD.Controllers
     {
         public ActionResult Index()
         {
-            return View();
-        }
+            var oswin = new Chatbot();
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+            oswin.BotName = "Oswin: ";
+            oswin.Greetings = "Hello! I am here to give you information related to Thomas.";
 
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return View(oswin);
         }
     }
 }
