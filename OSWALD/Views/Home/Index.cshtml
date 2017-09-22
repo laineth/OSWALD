@@ -16,7 +16,10 @@
             <textarea>
                 @{ 
                     @Html.DisplayFor(x => x.BotName);
-                    @Html.DisplayFor(z => z.Greetings);  
+                    @Html.DisplayFor(z => z.Greetings);
+                    <text>&#13;</text>
+                    @Html.DisplayFor(x => x.BotName);
+                    @Html.DisplayFor(h => h.Disclaimer);
                 }
             </textarea><br /><br />
             <input type="text" name="user_entry"><br /><br />

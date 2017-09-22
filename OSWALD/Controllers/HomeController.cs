@@ -14,7 +14,8 @@ namespace OSWALD.Controllers
             var oswin = new Chatbot
             {
                 BotName = "Oswin: ",
-                Greetings = "Hello! I am here to give you information about Thomas."
+                Greetings = "Hello! I am here to give you information about Thomas.",
+                Disclaimer = "You can type 'help' to see a list of all the available commands."
             };
 
             return View(oswin);
