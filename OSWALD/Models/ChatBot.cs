@@ -10,7 +10,5 @@ namespace OSWALD.Models
     {
         [Display(Name = "Name")]
         public string BotName { get; set; }
-        public string Greetings { get; set; }
-        public string Disclaimer { get; set; }
     }
 }
