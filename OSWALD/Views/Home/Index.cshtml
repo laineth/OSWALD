@@ -5,18 +5,14 @@
         <h1>OSWALD - Interactive Assistant</h1>
         <p>
             OSWALD is an Artificial Intelligence made with ASP .NET MVC and C#.<br />
-            As of for now, OSWALD is able to tell you information about me, don't hesitate to ask what you want to know.
+            As of for now, OSWALD is able to tell you information about me, don't hesitate to ask what you want to know.<br /><br />
+            <span id="disclaimer">
+                In order to make OSWALD more intelligent, every conversations are stored in a database.<br />
+                By having a talk with my chatbot, you agree to the fact that the conversations will be stored and analyzed.
+            </span>
         </p>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-12">
-        <form name="Oswin" id="oswin">
-            <textarea name="chat_window" id="chat">
-            </textarea><br /><br />
-            <input type="text" name="user_entry" id="user_entry"><br /><br />
-            <button type="submit" class="btn" id="send">Send</button>
-            <button type="reset" class="btn btn-danger">Reset</button>
-        </form>
-    </div>
-</div>
+@{ 
+    Html.RenderPartial("_ChatWindow");
+}
