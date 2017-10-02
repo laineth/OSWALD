@@ -4,17 +4,7 @@
     <div class="col-md-12">
         <form name="Oswin" id="oswin">
             <textarea name="chat_window" id="chat">
-                @Html.DisplayNameFor(model => model.Id)
-                @Html.DisplayNameFor(model => model.ConversationDate)
-                @Html.DisplayNameFor(model => model.User)
-                @Html.DisplayNameFor(model => model.Bot)
-                @foreach (var item in Model)
-                {
-                    @Html.DisplayFor(modelItem => item.Id)
-                    @Html.DisplayFor(modelItem => item.ConversationDate)
-                    @Html.DisplayFor(modelItem => item.User)
-                    @Html.DisplayFor(modelItem => item.Bot)
-                }
+                
             </textarea><br /><br />
             <input type="text" name="user_entry" id="user_entry"><br /><br />
             <button type="submit" class="btn" id="send">Send</button>
