@@ -13,7 +13,7 @@ namespace OSWALD.DAL
         {
             var conversations = new List<Conversation>
             {
-                new Conversation{ Id = 1, ConversationDate = DateTime.Now, User = "Hello", Bot = "Oswin" }
+                new Conversation { Id = 1, ConversationDate = DateTime.Now }
             };
 
             conversations.ForEach(c => context.Conversations.Add(c));

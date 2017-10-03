@@ -10,7 +10,5 @@ namespace OSWALD.Models
     {
         public int Id { get; set; }
         public DateTime ConversationDate { get; set; }
-        public string User { get; set; }
-        public string Bot { get; set; } 
     }
 }
