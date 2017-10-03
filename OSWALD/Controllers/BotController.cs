@@ -9,16 +9,10 @@ namespace OSWALD.Controllers
 {
     public class BotController : ApiController
     {
-        // GET api/<controller>
+        // GET <controller>
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
-        }
-
-        // GET api/<controller>/5
-        public string Get(int id)
-        {
-            return "value";
         }
     }
 }
