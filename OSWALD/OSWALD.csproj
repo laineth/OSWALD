@@ -157,6 +157,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BotController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\ConversationContext.cs" />
     <Compile Include="DAL\ConversationInitializer.cs" />
