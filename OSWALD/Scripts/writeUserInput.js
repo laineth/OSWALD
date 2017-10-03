@@ -10,5 +10,5 @@
     else
         $('#chat').val(t + "\nYou: " + u_input);
 
-
+    document.getElementById('user_entry').value = '';
 });
