@@ -9,6 +9,6 @@ namespace OSWALD.Models
     public class Conversation
     {
         public int Id { get; set; }
-        public DateTime ConversationDate { get; set; }
+        public string UserInput { get; set; }
     }
 }
