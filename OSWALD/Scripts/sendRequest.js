@@ -15,7 +15,7 @@
         jQuery.ajax({
             url: "http://localhost:54890/bot",
             type: "POST",
-            data: JSON.stringify({ value: u_input }),
+            data: JSON.stringify({ UserInput: u_input, Id: 42}),
             dataType: "json",
             contentType: "application/json; charset=utf-8",
             success: function (data, status)

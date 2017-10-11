@@ -10,5 +10,6 @@ namespace OSWALD.Models
     {
         public int Id { get; set; }
         public string UserInput { get; set; }
+        public string BotAnswer { get; set; }
     }
 }
