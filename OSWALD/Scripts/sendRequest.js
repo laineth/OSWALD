@@ -10,12 +10,11 @@
     {
         var u_input = $('#user_entry').val();
 
-        // Make a POST request to host/bot endpoint
-        // Send u_input with the request, so the server can process what the user said
+        // Start a new conversation -> No ID specified
         jQuery.ajax({
             url: "http://localhost:54890/bot",
             type: "POST",
-            data: JSON.stringify({ UserInput: u_input, Id: 42}),
+            data: JSON.stringify({ UserInput: u_input }),
             dataType: "json",
             contentType: "application/json; charset=utf-8",
             success: function (data, status)

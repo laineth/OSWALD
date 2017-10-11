@@ -13,7 +13,7 @@ namespace OSWALD.DAL
         {
             var conversations = new List<Conversation>
             {
-                new Conversation { Id = 1, UserInput = "", BotAnswer = "" }
+                new Conversation { Id = 0, UserInput = "", BotAnswer = ""}
             };
 
             conversations.ForEach(c => context.Conversations.Add(c));
