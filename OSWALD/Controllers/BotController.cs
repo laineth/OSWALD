@@ -21,11 +21,14 @@ namespace OSWALD.Controllers
         [HttpPost]
         public void CreateConversation([FromBody] Conversation data)
         {
+            String str = "TEST";
+
             using (var req = new ConversationContext())
             {
-                req.Database.ExecuteSqlCommand("INSERT INTO Conversation (UserInput) VALUES ('" + data.UserInput + "')");
+                req.Database.ExecuteSqlCommand("INSERT INTO Conversation (UserInput, BotAnswer) VALUES ('"+ data.UserInput +"', '"+ str +"')");
                 //req.Database.ExecuteSqlCommand("TRUNCATE TABLE Conversation;");
             } 
+
         }
 
         [Route("bot/id")]
